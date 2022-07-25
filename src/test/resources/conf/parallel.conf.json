@@ -1,0 +1,21 @@
+{
+  "server": "hub.lambdatest.com",
+  "user": "mayankmaurya",
+  "key": "gNUXYEyteCixY7PQQNWUj6AXgUAwxZzRzfnWFFsn37FK7JZM1H",
+
+  "capabilities": {
+    "build": "cucumber-java-LT"
+  },
+
+  "environments": [
+    {
+      "browser": "chrome"
+    },
+    {
+      "browser": "firefox"
+    },
+    {
+      "browser": "safari"
+    }
+  ]
+}
