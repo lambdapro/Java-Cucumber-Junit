@@ -1,7 +1,7 @@
 {
   "server": "hub.lambdatest.com",
-  "user": "mayankmaurya",
-  "key": "gNUXYEyteCixY7PQQNWUj6AXgUAwxZzRzfnWFFsn37FK7JZM1H",
+  "user": "",
+  "key": "",
 
   "capabilities": {
     "build": "cucumber-java-LT"
