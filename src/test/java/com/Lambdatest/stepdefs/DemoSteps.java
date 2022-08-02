@@ -1,5 +1,6 @@
 package com.Lambdatest.stepdefs;
 
+import com.Lambdatest.pageobject.LoginPage;
 import com.Lambdatest.util.Utility;
 import com.Lambdatest.RunWebDriverCucumberTests;
 import io.cucumber.java.After;
@@ -13,10 +14,12 @@ import static org.junit.Assert.assertTrue;
 
 public class DemoSteps {
     private WebDriver driver;
+    private LoginPage loginPage;
 
     @Before
     public void setUp() {
         driver = RunWebDriverCucumberTests.getManagedWebDriver().getWebDriver();
+        loginPage = new LoginPage(driver);
 
     }
 
@@ -24,6 +27,8 @@ public class DemoSteps {
     public void Navigate_to_website(String url) throws Throwable {
         driver.get(url);
         Thread.sleep(2000);
+
+        loginPage.mark_items();
     }
 
 
