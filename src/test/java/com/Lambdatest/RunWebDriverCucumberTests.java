@@ -24,7 +24,8 @@ import io.cucumber.testng.TestNGCucumberRunner;
                 "junit:reports/tests/cucumber/junit/cucumber.xml",
                 "testng:reports/tests/cucumber/testng/cucumber.xml",
                 "json:reports/tests/cucumber/json/cucumber.json"
-        }
+        },
+        format = {"json:target/cucumber.json"}
 )
 public class RunWebDriverCucumberTests {
 
